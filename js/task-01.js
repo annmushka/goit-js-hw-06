@@ -10,5 +10,3 @@ const elementList = element.querySelectorAll('li').length;
   console.log(`Elements: ${elementList}`);
 
 });
-
-

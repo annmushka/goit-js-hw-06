@@ -1,25 +1,20 @@
-// HTML містить порожній список ul#ingredients.
+const ingredients = [
+  'Potatoes',
+  'Mushrooms',
+  'Garlic',
+  'Tomatos',
+  'Herbs',
+  'Condiments',
+];
 
-// < ul id = "ingredients" ></ul >
-//   Напиши скрипт, який для кожного елемента масиву ingredients:
 
-// Створить окремий елемент <li>. Обов'язково використовуй метод document.createElement().
-// Додасть назву інгредієнта як його текстовий вміст.
-// Додасть елементу клас item.
-// Після чого, вставить усі <li> за одну операцію у список ul#ingredients.
+const ingredientsList = document.querySelector('#ingredients');
 
+ingredients.forEach(ingredient => {
 
-// const ingredients = [
-//   'Potatoes',
-//   'Mushrooms',
-//   'Garlic',
-//   'Tomatos',
-//   'Herbs',
-//   'Condiments',
-// ];
+  const ingredientsElList = document.createElement('li');
 
-//  const makeRecipe = ( = {}) =>
-// {
-
-// };
-// makeRecipe(ingredients[0])
+  ingredientsElList.textContent = ingredient;
+  ingredientsElList.classList.add('item');
+  ingredientsList.appendChild(ingredientsElList);
+});

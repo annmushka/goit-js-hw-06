@@ -21,6 +21,7 @@ const galleryCardEl = elem => {
 }; 
 const galleryCardsEl = images.map(galleryCardEl).join('');
  galleryListItem.insertAdjacentHTML('afterbegin', galleryCardsEl);
-  document.querySelector('.gallery').style = "display:flex;justify-content:center; gap: 40px; align-items:center; list-style:none; object-fit:cover"
+document.querySelector('.gallery').style = "display:flex;justify-content:center; gap: 40px; align-items:center; list-style:none; object-fit:cover";
 
-  
+
+
